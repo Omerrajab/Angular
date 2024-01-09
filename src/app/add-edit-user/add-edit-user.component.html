@@ -1,0 +1,6 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input id="name" type="text" formControlName="name"  required/>
+
+    <button type="submit" [disabled]="myForm.invalid">Submit</button>
+  </form>
